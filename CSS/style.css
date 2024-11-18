@@ -1,0 +1,33 @@
+html{
+    font-family: "Poppins", serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;   
+}
+.header .container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}ul li{
+    list-style: none;
+}
+/* HEADER */
+.topbar{
+    display: flex;
+    justify-content: space-between;
+}
+.topbar ul{
+    display: flex;
+}
+.topbar ul li{
+    padding: 10px 15px;
+}
+.contact-info{
+    display: flex;
+    padding: 10px;
+}
