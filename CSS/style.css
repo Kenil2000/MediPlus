@@ -173,7 +173,7 @@ a{
     flex-direction: column;
     justify-content: flex-start;
     align-content: space-between;
-    padding-top: 200px;
+    padding-top: 150px;
     width: 600px;
 }
 
@@ -226,6 +226,11 @@ h1 span{
 }
 
 /* SERVICE */
+
+.services{
+    position: relative;
+    top: -120px;
+}
 
 .service-contant{
     background-color: #1a76d1;
@@ -312,4 +317,59 @@ h1 span{
     font-weight: 400;
     text-decoration: underline;
     cursor: pointer;
+}
+
+/* HELTH-SERVICES */
+
+.health-service{
+    justify-content: center;
+    display: flex;
+}
+
+.section-title{
+    width: 610px;
+    /* margin: o auto;   */
+    text-align: center;
+}
+
+.section-title h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--dark-gray);
+    margin-bottom: 24px;
+}
+
+.section-title p{
+    font-size: 15px;
+    color: var(--light-gray);
+    margin-top: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* TREATMENT */
+
+.emergency-help .ambulance{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: var(--light-gray) solid 1px;
+}
+
+.enriched-pharmecy .pharmecy{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: var(--light-gray) solid 1px;
+}
+
+.medical-treatment{
+    display: flex;
+}
+
+.medical-treatment .stethoscope{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: var(--light-gray) solid 1px;
 }
