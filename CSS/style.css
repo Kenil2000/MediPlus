@@ -14,6 +14,9 @@ html{
     --white:#ffffff;
     --blue:#1a76d1;
     --black:#000000;
+    --gray:#757575;
+
+
 }
 
 ul{
@@ -43,9 +46,18 @@ ul li{
     flex-wrap: wrap;
 }
 
+.w-2{
+    width: 50%;
+}
+
 .w-3{
     width: 33.33%;
 }
+
+.w-4{
+    width: 25%;
+}
+
 
 a{
     text-decoration: none;
@@ -232,36 +244,36 @@ h1 span{
     top: -120px;
 }
 
-.service-contant{
+.services-content{
     background-color: #1a76d1;
     color: var(--white);
     padding: 30px;
     margin: 0 15px;
-    border-radius: 4px;
+    border-radius: 5px;
 } 
 
-.service-timetable{
+.services-timetable{
     background-color: #1a76d1;
     color: var(--white);
     padding: 30px;
     margin: 0 15px;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 
-.service-contant span{
+.services-content span{
     color: var(--white);
     font-size: 14px;
     font-weight: 400;
 }
 
-.service-contant h4{
+.services-content h4{
     color: var(--white);
     font-size: 20px;
     margin-top: 13px;
     font-weight: 600;
 }
 
-.service-contant p{
+.services-content p{
     color: var(--white);
     font-size: 14px;
     margin-top: 22px;
@@ -270,33 +282,33 @@ h1 span{
     font-weight: 400;
 }
 
-.service-contant a{
+.services-content a{
     color: var(--white);
     font-size: 14px;
     font-weight: 400;
 }
 
-.service-contant a:hover{
+.services-content a:hover{
     font-size: 15px;
     font-weight: 400;
     text-decoration: underline;
     cursor: pointer;
 }
 
-.service-timetable span{
+.services-timetable span{
     color: var(--white);
     font-size: 14px;
     font-weight: 400;   
 }
 
-.service-timetable h4{
+.services-timetable h4{
     color: var(--white);
     font-size: 20px;
     margin-top: 13px;
     font-weight: 600;
 }
 
-.service-timetable .timetable{
+.services-timetable .timetable{
     color: var(--white);
     font-size: 14px;
     margin-top: 22px;
@@ -306,13 +318,13 @@ h1 span{
     line-height: 22px;
 }
 
-.service-timetable a{
+.services-timetable a{
     color: var(--white);
     font-size: 14px;
     font-weight: 400;
 }
 
-.service-timetable a:hover{
+.services-timetable a:hover{
     font-size: 15px;
     font-weight: 400;
     text-decoration: underline;
@@ -321,9 +333,10 @@ h1 span{
 
 /* HELTH-SERVICES */
 
-.health-service{
+.health-text{
     justify-content: center;
     display: flex;
+    margin-bottom: 100px;
 }
 
 .section-title{
@@ -341,7 +354,7 @@ h1 span{
 
 .section-title p{
     font-size: 15px;
-    color: var(--light-gray);
+    color: var(--gray);
     margin-top: 15px;
     font-weight: 400;
     line-height: 24px;
@@ -349,27 +362,232 @@ h1 span{
 
 /* TREATMENT */
 
-.emergency-help .ambulance{
+.emergency-treatment{
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.emergency-treatment .health-logo{
     height: 100px;
     width: 100px;
     border-radius: 50%;
     border: var(--light-gray) solid 1px;
 }
 
-.enriched-pharmecy .pharmecy{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    border: var(--light-gray) solid 1px;
+.emergency-treatment .health-logo:hover{
+    border: none;
+    background-color: var(--blue);
 }
 
-.medical-treatment{
+.emergency-treatment h3{
+    font-size: 21px;
+    font-weight: 600;
+    color: var(--dark-gray);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.emergency-treatment p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--gray);
+}
+
+/* COUNTDOWN */
+
+.countdown{
+    background-image: url(/Image/Image/fun-bg.jpg);
+    height: 295px;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.overlay-countdown{
+    height: 295px;
+    width: 100%;
+    background-color: var(--blue);
+    opacity: 0.7;
+    align-content: center;
+}
+
+.countdown-content .countdown-text{
+    width: 285px;
     display: flex;
 }
 
-.medical-treatment .stethoscope{
-    height: 100px;
-    width: 100px;
+.countdown-text .countdown-logo{
+    height: 70px;
+    width: 70px;
     border-radius: 50%;
-    border: var(--light-gray) solid 1px;
+    border: var(--white) 2px solid;
+    background-color: none;
+}
+
+.countdown-text .countdown-logo:hover{
+    background-color: var(--white);
+    border: none;
+}
+
+.countdown-number{
+    padding-left: 20px;
+}
+
+.countdown-text h3{
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.countdown-text p{
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* WHY-CHOOSE */
+
+.why-choose{
+    padding-bottom: 100px;
+}
+
+.why-choose-content{
+    display: flex;
+}
+
+.why-choose-text{
+    width: 570px;
+    height: 360px;
+    padding: 0 15px;
+}
+
+.why-choose-notes{
+    display: flex;
+}
+
+.why-choose-notes .notes-1{
+    margin: 0 15px;
+}
+
+.why-choose-notes .notes-2{
+    margin: 0 15px;
+}
+
+.why-choose-img{
+    width: 570px;
+    height: 360px;
+    padding: 0 15px;
+    background-image: url(/Image/Image/video-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+.why-choose-text h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--dark-gray);
+    padding-bottom: 20px;
+}
+
+.why-choose-text .line{
+    width: 55px;
+    height: 2px;
+    background-color: var(--blue);
+    margin-bottom: 24px;
+}
+
+.why-choose-text p{
+    padding-bottom: 35px;
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.why-choose-text .why-choose-notes{
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* CONTACT */
+
+.contact{
+    background-image: url(/Image/Image/call-bg.jpg);
+    height: 450px;
+    width: 100%;
+    margin-bottom: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.overlay-contact{
+    height: 450px;
+    width: 100%;
+    background-color: var(--blue);
+    opacity: 0.7;
+    align-content: center;
+}
+
+.contact-text{
+    width: 580px;
+    text-align: center;
+}
+
+.contact-text h2{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 46px;
+    color: var(--dark-gray);
+}
+
+.contact-text p{
+    margin: 30px 0px;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.contact-button .contact-now{
+    padding: 13px 28px;
+    color: var(--blue);
+    background-color: var(--white);
+    border-radius: 4px;
+    border: none;
+    font-weight: 500; 
+    margin-right: 20px;
+}
+
+.contact-button .contact-now:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.contact-button .learn-more{
+    padding: 13px 28px;
+    border-radius: 4px;
+    border:var(--white) 1px solid;
+    font-weight: 500;
+    background-color: var(--blue);
+}
+
+.contact-button .learn-more a{
+    color: var(--white);
+}
+
+.contact-button .learn-more:hover{
+    background-color: var(--white);
 }
