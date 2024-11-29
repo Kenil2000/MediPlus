@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mediplus - Free Medical and Doctor Directory HTML Template.</title>
     <link rel="stylesheet" href="/CSS/style.css" type="text/css" />
-    <link rel="stylesheet" href="/Font/Poppins/stylesheet.css" type="text/css" />
+    <link rel="stylesheet" href="/fonts/Poppins/stylesheet.css" type="text/css" />
+    <link rel="stylesheet" href="/CSS/all.min.css" type="text/css">
+    <link rel="stylesheet" href="/CSS/icofont.min.css" type="text/css">
 </head>
 
 <body>
@@ -14,33 +16,42 @@
     <header class="header">
         <div class="container">
             <div class="topbar">
-                <ul>
-                    <li>About</li>
-                    <li>Doctors</li>
-                    <li>Contact</li>
-                    <li>FAQ</li>
-                </ul>
-            </div>
-            <div class="contact-info">
-                <p>+880 1234 56789</p>
-                <p class="email">support@yourmail.com</p>
+                <div class="topbar-content">
+                    <ul>
+                        <li>About</li>
+                        <li>Doctors</li>
+                        <li>Contact</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+                <div class="contact-info">
+                    <p><i class="fa-solid fa-phone phone-icon"></i>+880 1234 56789</p>
+                    <p class="email"><i class="fa-solid fa-envelope email-icon"></i>support@yourmail.com</p>
+                </div>
             </div>
         </div>
-        <hr class="hr" />
-        <div class="container">
-            <img src="/Image/Image/logo.png" alt="Mediplus" class="logo" />
-            <div class="menubar">
-                <ul>
-                    <li>Home</li>
-                    <li>Doctos</li>
-                    <li>Services</li>
-                    <li>Pages</li>
-                    <li>Blogs</li>
-                    <li>Contact Us</li>
-                </ul>
+
+        <hr />
+
+        <div class="navbar">
+            <div class="container">
+                <div class="navbar-content">
+                    <img src="/Image/Image/logo.png" alt="Mediplus" class="navbar-logo" />
+                    <div class="navbar-menu">
+                        <ul>
+                            <li>Home<i class="fa-solid fa-angle-down menubar-icon"></i></li>
+                            <li>Doctos</li>
+                            <li>Services</li>
+                            <li>Pages<i class="fa-solid fa-angle-down menubar-icon"></i></li>
+                            <li>Blogs<i class="fa-solid fa-angle-down menubar-icon"></i></li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
+                    <button class="navbar-btn">Book Appoinment</button>
+                </div>
             </div>
-            <button class="btn">Book Appoinment</button>
         </div>
+
     </header>
     <!-- <MAIN> -->
     <main>
@@ -49,7 +60,7 @@
 
         <section class="slider">
             <div class="container">
-                <div class="text">
+                <div class="slider-text">
                     <h1>
                         We Provide
                         <span> Medial</span>
@@ -57,11 +68,10 @@
                         <span>Trust!</span>
                     </h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex quas
-                        aliquam autem impedit molestias qui aperiam vero quasi omnis,
-                        debitis quae recusandae corrupti numquam dolorem illo.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus
+                        libero eu, gravida quam.
                     </p>
-                    <div class="btns">
+                    <div class="slider-btns">
                         <button class="btns1">Get Appoinment</button>
                         <button class="btns2">About Us</button>
                     </div>
@@ -85,7 +95,8 @@
                             <p>
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta itaque facere.
                             </p>
-                            <a href="javascript:void(0)">LEARN MORE</a>
+                            <a href="javascript:void(0)">LEARN MORE<i
+                                    class="fa-solid fa-arrow-right services-arrow"></i></a>
                         </div>
                     </div>
                     <div class="w-3">
@@ -99,7 +110,8 @@
                             <p>
                                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta itaque facere.
                             </p>
-                            <a href="javascript:void(0)">LEARN MORE</a>
+                            <a href="javascript:void(0)">LEARN MORE<i
+                                    class="fa-solid fa-arrow-right services-arrow"></i></a>
 
                         </div>
                     </div>
@@ -125,7 +137,8 @@
                                     <li>9.00-15.00</li>
                                 </ul>
                             </div>
-                            <a href="javascript:void(0)">LEARN MORE</a>
+                            <a href="javascript:void(0)">LEARN MORE<i
+                                    class="fa-solid fa-arrow-right services-arrow"></i></a>
 
                         </div>
                     </div>
@@ -154,7 +167,7 @@
 
                         <div class="w-3">
                             <div class="emergency-treatment">
-                                <div class="health-logo"></div>
+                                <div class="health-logo"><i class="fa-solid fa-truck-medical"></i></div>
                                 <h3>Emergency Help</h3>
                                 <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
                             </div>
@@ -162,7 +175,7 @@
 
                         <div class="w-3">
                             <div class="emergency-treatment">
-                                <div class="health-logo"></div>
+                                <div class="health-logo"><i class="fa-solid fa-staff-snake"></i></div>
                                 <h3>Enriched Pharmecy</h3>
                                 <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
                             </div>
@@ -170,7 +183,7 @@
 
                         <div class="w-3">
                             <div class="emergency-treatment">
-                                <div class="health-logo"></div>
+                                <div class="health-logo"><i class="fa-solid fa-stethoscope"></i></div>
                                 <h3>Medical Treatment</h3>
                                 <p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
                             </div>
@@ -192,7 +205,7 @@
 
                             <div class="w-4">
                                 <div class="countdown-text">
-                                    <div class="countdown-logo"></div>
+                                    <div class="countdown-logo"><i class="fa-solid fa-house-chimney"></i></div>
                                     <div class="countdown-number">
                                         <h3>3468</h3>
                                         <p>Hospital Rooms</p>
@@ -202,7 +215,7 @@
 
                             <div class="w-4">
                                 <div class="countdown-text">
-                                    <div class="countdown-logo"></div>
+                                    <div class="countdown-logo"><i class="fa-solid fa-user"></i></div>
                                     <div class="countdown-number">
                                         <h3>557</h3>
                                         <p>Specialist Doctors</p>
@@ -212,7 +225,7 @@
 
                             <div class="w-4">
                                 <div class="countdown-text">
-                                    <div class="countdown-logo"></div>
+                                    <div class="countdown-logo"><i class="fa-solid fa-smile"></i></div>
                                     <div class="countdown-number">
                                         <h3>4379</h3>
                                         <p>Happy Patients</p>
@@ -222,7 +235,7 @@
 
                             <div class="w-4">
                                 <div class="countdown-text">
-                                    <div class="countdown-logo"></div>
+                                    <div class="countdown-logo"><i class="fa-solid fa-table"></i></div>
                                     <div class="countdown-number">
                                         <h3>32</h3>
                                         <p>Years of Experience</p>
@@ -254,7 +267,6 @@
             <div class="container">
                 <div class="row">
                     <div class="why-choose-content">
-
                         <div class="w-2">
                             <div class="why-choose-text">
                                 <h3>Who We Are</h3>
@@ -312,9 +324,9 @@
             </div>
         </section>
 
-         <!-- HEALTH-TEXT -->
+        <!-- HEALTH-TEXT -->
 
-         <section class="health-text">
+        <section class="health-text">
             <div class="container">
                 <div class="section-title">
                     <h2>We Maintain Cleanliness Rules Inside Our Hospital</h2>
@@ -324,7 +336,162 @@
             </div>
         </section>
 
+        <!-- GALLERY -->
+
+        <section class="gallary">
+            <div class="row">
+                <div class="w-4">
+                    <div class="gallary-image">
+                        <div class="gallary-overlay">
+                            <button class="btn-view-details">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-4">
+                    <div class="gallary-image">
+                        <div class="gallary-overlay">
+                            <button class="btn-view-details">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-4">
+                    <div class="gallary-image">
+                        <div class="gallary-overlay">
+                            <button class="btn-view-details">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-4">
+                    <div class="gallary-image">
+                        <div class="gallary-overlay">
+                            <button class="btn-view-details">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- HEALTH-TEXT -->
+
+        <section class="health-text">
+            <div class="container">
+                <div class="section-title">
+                    <h2>We Offer Different Services To Improve Your Health</h2>
+                    <img src="/Image/Image/section-img.png" alt="section-title">
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SINGAL-SERVICE -->
+
+        <section class="singal-service">
+            <div class="container">
+                <div class="row">
+                    <div class="singal-service-content">
+
+                        <div class="w-3">
+                            <div class="singal-service-text">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                                <div class="singal-service-per">
+                                    <h4>
+                                        <a href="javascript:void(0)">General Treatment</a>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros
+                                        ut imperdiet.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-3">
+                            <div class="singal-service-text">
+                                <i class="fa-solid fa-tooth"></i>
+                                <div class="singal-service-per">
+                                    <h4>
+                                        <a href="javascript:void(0)">Teeth Whitening</a>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros
+                                        ut imperdiet.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-3">
+                            <div class="singal-service-text">
+                                <i class="fa-solid fa-heart"></i>
+                                <div class="singal-service-per">
+                                    <h4>
+                                        <a href="javascript:void(0)">Heart Sergery</a>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros
+                                        ut imperdiet.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="singal-service-content">
+
+                        <div class="w-3">
+                            <div class="singal-service-text">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                                <div class="singal-service-per">
+                                    <h4>
+                                        <a href="javascript:void(0)">General Treatment</a>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros
+                                        ut imperdiet.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-3">
+                            <div class="singal-service-text">
+                                <i class="fa-solid fa-tooth"></i>
+                                <div class="singal-service-per">
+                                    <h4>
+                                        <a href="javascript:void(0)">Teeth Whitening</a>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros
+                                        ut imperdiet.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-3">
+                            <div class="singal-service-text">
+                                <i class="fa-solid fa-heart"></i>
+                                <div class="singal-service-per">
+                                    <h4>
+                                        <a href="javascript:void(0)">Heart Sergery</a>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros
+                                        ut imperdiet.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+       
+
     </main>
+
     <!-- <FOOTER> -->
     <footer></footer>
 </body>
